@@ -1,15 +1,9 @@
-/* styles */
-/* called by your view template */
-
-/* You might want to try something fancier: */
-/* less: http://lesscss.org/ */
-
 * {
   box-sizing: border-box;
 }
 
 body {
-  font-family: helvetica, arial, sans-serif;
+  font-family: 'Gloria Hallelujah', cursive;
   margin: 25px;
 }
 
@@ -25,7 +19,6 @@ header {
 h1 {
   font-weight: bold;
   color: #000;
-  font-family: fantasy;
 }
 
 .bold {

@@ -1,29 +1,10 @@
-
-
-
-
-
-// function checkWeight() {
-//     let petWeight = 70;
-//     if (petWeight > 130) {
-//         console.log("Put Rambo on a diet-- less snackos")
-//         else  {
-//         console.log("Give that boy some snackos. His ribs are touching")
-//     }
-//     }
-// }
-
-
-
-
-
 $(function() {
  
     // Add a variable "pet_info" equal to a object with the name (string), weight (number), and happiness (number) of your pet
     let pet_info = {
-    name: "Rambo",
-    weight: 70,
-    happiness: 10
+    "name": "Soph",
+    "weight": 70,
+    "happiness": 10
     }
    
 
@@ -38,9 +19,8 @@ $(function() {
 
   
     function clickedTreatButton() {
-        // Increase pet happiness
+      // Increase pet happiness
         pet_info['happiness'] =  pet_info['happiness'] + 1;
-
       // Increase pet weight
         pet_info['weight'] = pet_info['weight'] + 5;
       checkAndUpdatePetInfoInHtml();
@@ -48,33 +28,30 @@ $(function() {
     
     function clickedPlayButton() {
       // Increase pet happiness
-      pet_info['happiness'] =  pet_info['happiness'] + 1;
-
+        pet_info['happiness'] =  pet_info['happiness'] + 1;
       // Decrease pet weight
-      pet_info['weight'] = pet_info['weight'] - 5;
-
+        pet_info['weight'] = pet_info['weight'] - 5;
       checkAndUpdatePetInfoInHtml();
     }
     
     function clickedExerciseButton() {
       // Decrease pet happiness
-      pet_info['happiness'] =  pet_info['happiness'] - 1;
-
+        pet_info['happiness'] =  pet_info['happiness'] - 1;
       // Decrease pet weight
-      pet_info['weight'] = pet_info['weight'] - 5;
-
+        pet_info['weight'] = pet_info['weight'] - 5;
       checkAndUpdatePetInfoInHtml();
     }
   
     function checkAndUpdatePetInfoInHtml() {
       checkWeightAndHappinessBeforeUpdating();  
-        if pet_info['weight'] < 1
       updatePetInfoInHtml();
-
     }
     
     function checkWeightAndHappinessBeforeUpdating() {
       // Add conditional so if weight is lower than zero, set it back to zero
+      if (pet_info[weight] < 0) {
+        pet_info[weight] = 0;
+      }
     }
     
     // Updates your HTML with the current values in your pet_info object
