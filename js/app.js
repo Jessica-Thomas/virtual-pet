@@ -52,9 +52,21 @@ $(function() {
         pet_info['weight'] = 1;
       }
 
+      if (pet_info['weight'] < 50) {
+        alert("Soph's ribs are touching. Better get her weight up.")      
+      }
+
+      if (pet_info['weight'] > 85) {
+        alert('Soph is getting a little chonky... maybe ease up on the treats.')
+      }
+
      if (pet_info['happiness'] < 0) {
       pet_info['happiness'] = 0;
+        alert('Soph needs to play. Better get her happiness up.')
       }
+
+
+
 
     }
 
