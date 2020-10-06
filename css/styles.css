@@ -46,6 +46,7 @@ footer a {
 
 .pet-image {
   height:150px;
+  border-radius: 10px;
 }
 
 .dashboard div {
