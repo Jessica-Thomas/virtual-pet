@@ -65,13 +65,14 @@ $(function() {
         alert('Soph needs to play. Better get her happiness up.')
       }
 
-
-
+      if (pet_info['happiness'] >= 100) {
+        pet_info['happiness'] = 0;
+          alert('Soph HAS ALL THE EXCITE. KISS ATTACK.');
+          pet_info['happiness'] = 20;
+        }
 
     }
 
-
-    
     // Updates HTML with the current values in pet_info object
     function updatePetInfoInHtml() {
       $('.name').text(pet_info['name']);
